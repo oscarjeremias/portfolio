@@ -1,0 +1,9 @@
+{
+  "name": "oscarjeremias",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
