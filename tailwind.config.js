@@ -7,6 +7,15 @@ module.exports = {
       blue: "#69C9D0",
     },
     extend: {
+      keyframes: {
+        click: {
+          from: { background: "#69C9D0" },
+          to: { background: "#69C9D0" },
+        },
+      },
+      animation: {
+        click: "click 1s",
+      },
       fontFamily: {
         dancing: ["Dancing Script", "cursiva"],
         roboto: ["Roboto", "sans-serif"],

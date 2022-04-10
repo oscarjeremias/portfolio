@@ -10,58 +10,114 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://github.com/oscarjeremias.png"
+    />
     <title>Oscar jeremias</title>
   </head>
   <body
-    class="min-h-screen min-w-full grid grid-cols-1 grid-rows-3 bg-black text-white box-border overflow-x-hidden"
+    class="min-h-screen min-w-full grid grid-cols-1 grid-rows-3 bg-black text-white box-border"
   >
-    <!=====================menu active============================>
-    <div
-      class="hidden z-40 min-h-screen min-w-full absolute top-0 right-0 bg-black overflow-y-hidden duration-500"
-      id="menuActive"
-    >
-      <ul class="m-16">
-        <li>Sobre</li>
-        <li>Projectos</li>
-        <li>Artigos</li>
-        <li>Habilidades</li>
-      </ul>
-    </div>
-    <!=====================menu active============================>
-
-    <!=====================header============================>
     <header
-      class="border border-blue border-t-0 border-l-0 border-r-0 p-4 flex justify-between items-center row-start-1 row-end-2"
+      class="border border-blue border-t-0 border-l-0 border-r-0 p-4 flex justify-between items-center row-start-1 row-end-2 sm:p-8"
     >
-      <!====================logo============================>
-      <div class="font-dancing text-3xl z-50" translate="no">OJ</div>
-      <!====================logo============================>
+      <div class="font-dancing text-3xl duration-500" translate="no">OJ</div>
+      <div>
+        <!=====================menu============================>
+        <menu
+          class="absolute top-0 right-0 h-2 w-11 m-3 z-50 sm:hidden"
+          id="menu"
+        >
+          <div
+            class="bg-blue w-2/4 h-1/3 rounded absolute right-0 duration-500"
+          ></div>
+          <div
+            class="bg-blue w-3/4 h-1/3 rounded absolute right-0 translate-y-3 duration-700"
+          ></div>
+          <div
+            class="bg-blue w-full h-1/3 rounded absolute translate-y-6 duration-500"
+          ></div>
+        </menu>
+        <!=====================menu============================>
 
-      <!=====================menu============================>
-      <menu class="absolute top-0 right-0 h-3.5 w-11 m-3 z-50" id="menu">
-        <div class="bg-blue w-full h-1/3 rounded absolute duration-500"></div>
         <div
-          class="bg-blue w-full h-1/3 rounded absolute translate-y-3 duration-700"
-        ></div>
-        <div
-          class="bg-blue w-full h-1/3 rounded absolute translate-y-6 duration-500"
-        ></div>
-      </menu>
-      <!=====================menu============================>
+          class="hidden h-screen w-full absolute top-0 right-0 bg-black du ration-500 flex justify-center items-center text-white z-30 sm:block sm:relative sm:top-0 sm:right-0 sm:h-4"
+          id="menuActive"
+        >
+          <ul
+            class="min-h-sreen w-full flex flex-col justify-center items-center gap-y-2 sm:flex-row sm:gap-x-4 sm:h-full text-2xl"
+          >
+            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">Sobre</li>
+            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">Projectos</li>
+            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">Artigos</li>
+            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">
+              Habilidades
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <!=====================header============================>
 
-    <!=====================section============================>
-    <section class="p-4 row-start-2 row-end-3">section</section>
-    <!=====================section============================>
+    <section
+      class="p-8 row-start-2 row-end-3 flex flex-col justify-center items-center"
+    >
+      <h1
+        id="title"
+        class="w-full text-4xl font-bold relative top-0 right-0 my-6 text-left sm:w-3/4"
+      >
+        Sobre
+      </h1>
+      <div
+        class="w-full h-3/4 border border-blue p-6 sm:w-3/4 duration-700"
+        id="container"
+      >
+        <p class="m-4" id="content">Ola mundo</p>
+      </div>
+      <button
+        class="m-8 rounded border border-blue px-8 py-2 cursor-pointer"
+        id="seguinte"
+      >
+        Projectos
+      </button>
+    </section>
 
-    <!=====================footer============================>
     <footer
       class="border border-blue border-b-0 border-l-0 border-r-0 p-4 row-start-3 row-end-ki4"
     >
-      footer
+      <div>
+        <a href="mailto:oscarjeremiasdev@gmail.com"
+          >oscarjeremiasdev@gmail.com</a
+        >
+      </div>
+      <div class="m-4 flex gap-x-4 duration-500">
+        <a href="https://github.com/oscarjeremias" target="_blank">
+          <img
+            src="https://cdn.iconfinder.com/stored_data/335390/128/png?token=1649602701-ytekoiTPNxoz%2B%2B1vJ8pkxyRsfxdrfMDc0OboRAP8KDk%3D"
+            alert="link do meu Github"
+            width="20px"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/%C3%B3scar-jeremias-356821235"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.iconfinder.com/stored_data/335399/128/png?token=1649603062-5glwYED368lzUBbl1x6y1zYBMdqIu5SahNG%2Fp8GZBfQ%3D"
+            alert="link do meu Linkedin"
+            width="20px"
+          />
+        </a>
+        <a href="https://medium.com/@oscarjeremiasdev" target="_blank">
+          <img
+            src="https://cdn.iconfinder.com/stored_data/335401/128/png?token=1649603168-PoHXDjeS85jp42RArLxXG3fPXF5Rnp14sCodV9igVww%3D"
+            alert="link do meu Medium"
+            width="20px"
+          />
+        </a>
+      </div>
     </footer>
-    <!=====================footer============================>
     <script src="./main.js"></script>
   </body>
 </html>
