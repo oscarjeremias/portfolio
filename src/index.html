@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./global.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,10 +19,10 @@
     <title>Oscar jeremias</title>
   </head>
   <body
-    class="min-h-screen min-w-full grid grid-cols-1 grid-rows-3 bg-black text-white box-border"
+    class="min-h-screen min-w-full grid grid-cols-1 grid-rows-3 bg-black text-white box-border font-roboto"
   >
     <header
-      class="border border-blue border-t-0 border-l-0 border-r-0 p-4 flex justify-between items-center row-start-1 row-end-2 sm:p-8"
+      class="fixed bg-black w-full h-14 border border-blue border-t-0 border-l-0 border-r-0 p-4 flex justify-between items-center row-start-1 row-end-2 sm:p-8"
     >
       <div class="font-dancing text-3xl duration-500" translate="no">OJ</div>
       <div>
@@ -43,48 +44,117 @@
         <!=====================menu============================>
 
         <div
-          class="hidden h-screen w-full absolute top-0 right-0 bg-black du ration-500 flex justify-center items-center text-white z-30 sm:block sm:relative sm:top-0 sm:right-0 sm:h-4"
+          class="hidden h-screen w-full absolute top-0 right-0 bg-black du ration-500 flex justify-center items-center text-white sm:block sm:relative sm:top-0 sm:right-0 sm:h-4 z-30 bg-black"
           id="menuActive"
         >
           <ul
-            class="min-h-sreen w-full flex flex-col justify-center items-center gap-y-2 sm:flex-row sm:gap-x-4 sm:h-full text-2xl"
+            class="min-h-sreen w-full flex flex-col justify-center items-center gap-y-2 sm:flex-row sm:gap-x-4 sm:h-full sm:text-sm"
           >
-            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">Sobre</li>
-            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">Projectos</li>
-            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">Artigos</li>
-            <li class="my-4 font-bold p-4 cursor-pointer sm:my-0">
-              Habilidades
+            <li class="my-2 font-bold p-4 sm:my-0 option">
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li class="my-2 font-bold p-4 sm:my-0 option">
+              <a href="#projectos">Projectos</a>
+            </li>
+            <li class="my-2 font-bold p-4 sm:my-0 option">
+              <a href="#artigos">Artigos</a>
+            </li>
+            <li class="my-2 font-bold p-4 sm:my-0 option">
+              <a href="#habilidades">Habilidades</a>
+            </li>
+            <li class="my-2 font-bold p-4 sm:my-0 option">
+              <a href="">Currículo</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
 
-    <section
-      class="p-8 row-start-2 row-end-3 flex flex-col justify-center items-center"
-    >
-      <h1
-        id="title"
-        class="w-full text-4xl font-bold relative top-0 right-0 my-6 text-left sm:w-3/4"
-      >
-        Sobre
-      </h1>
-      <div
-        class="w-full h-3/4 border border-blue p-6 sm:w-3/4 duration-700"
-        id="container"
-      >
-        <p class="m-4" id="content">Ola mundo</p>
+    <section class="">
+      <div class="min-h-screen p-8" id="sobre">
+        <div class="h-24"></div>
+        <div
+          class="border border-blue p-8 w-full sm:w-3/4 m-auto translate-x-[-400px] sectionArtec min-h-3/4"
+          id="sectionSobre"
+        >
+          <h1 class="text-3xl font-bold my-6">Sobre</h1>
+          <p class="">
+            Eu sou um dev front end chamado
+            <span class="font-bold text-2xl">Óscar Jeremias</span> que gosta de
+            compartilhar os seus conhecimentos com outros devs tem como
+            objectivo principal da carreira melhorar a experiência do usuário na
+            web
+          </p>
+        </div>
       </div>
-      <button
-        class="m-8 rounded border border-blue px-8 py-2 cursor-pointer"
-        id="seguinte"
-      >
-        Projectos
-      </button>
+
+      <div class="min-h-screen p-8" id="projectos">
+        <div class="h-24"></div>
+        <div
+          class="border border-blue p-8 w-full sm:w-3/4 m-auto translate-x-[-400px] sectionArtec min-h-3/4"
+        >
+          <h1 class="my-6 text-3xl font-bold">Projectos</h1>
+          <ol class="list-disc">
+            <li>
+              <h2 class="font-bold">Fut live score</h2>
+              <p class="text-xs">
+                Site de ver resultados de jogos de futebol ao vivo
+              </p>
+              <a
+                href="https://github.com/oscarjeremias/fut-live-score"
+                class="text-xs text-blue"
+                >Github</a
+              >
+              <a class="text-xs text-blue" href="">Link</a>
+              <ol class="flex gap-2 text-xs font-bold">
+                <li>REACTJS</li>
+                <li>NEXTJS</li>
+                <l>API RESTFULL</l>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="min-h-screen p-8" id="artigos">
+        <div class="h-24"></div>
+        <div
+          class="border border-blue p-8 w-full sm:w-3/4 m-auto translate-x-[-400px] sectionArtec min-h-3/4"
+        >
+          <h1 class="my-6 text-3xl font-bold">Artigos</h1>
+          <p>
+            Encontras os artigos escritos por me sobre front end em
+            <a class="text-blue" href="https://dev.to/oscarjeremiasdev"
+              >dev.to</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="min-h-screen p-8" id="habilidades">
+        <div class="h-24"></div>
+        <div
+          class="border border-blue p-8 w-full sm:w-3/4 m-auto translate-x-[-400px] sectionArtec min-h-3/4"
+        >
+          <h1 class="my-6 text-3xl font-bold">Habilidades</h1>
+          <ol class="list-disc">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACTJS</li>
+            <li>TYPESCRIPT</li>
+            <li>NEXTJS</li>
+            <li>JEST</li>
+            <li>PRISMA</li>
+            <li>tailwind css</li>
+            <li>TESTING library</li>
+            <li>NODEJS</li>
+            <li>API RESTFULL</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <footer
-      class="border border-blue border-b-0 border-l-0 border-r-0 p-4 row-start-3 row-end-ki4"
+      class="bg-transparent w-full border border-blue border-b-0 border-l-0 border-r-0 p-4 fixed bottom-0 left-0"
     >
       <div>
         <a href="mailto:oscarjeremiasdev@gmail.com"
@@ -94,7 +164,7 @@
       <div class="m-4 flex gap-x-4 duration-500">
         <a href="https://github.com/oscarjeremias" target="_blank">
           <img
-            src="https://cdn.iconfinder.com/stored_data/335390/128/png?token=1649602701-ytekoiTPNxoz%2B%2B1vJ8pkxyRsfxdrfMDc0OboRAP8KDk%3D"
+            src="./fotos/339994.png"
             alert="link do meu Github"
             width="20px"
           />
@@ -104,14 +174,14 @@
           target="_blank"
         >
           <img
-            src="https://cdn.iconfinder.com/stored_data/335399/128/png?token=1649603062-5glwYED368lzUBbl1x6y1zYBMdqIu5SahNG%2Fp8GZBfQ%3D"
+            src="./fotos/340054.png"
             alert="link do meu Linkedin"
             width="20px"
           />
         </a>
         <a href="https://medium.com/@oscarjeremiasdev" target="_blank">
           <img
-            src="https://cdn.iconfinder.com/stored_data/335401/128/png?token=1649603168-PoHXDjeS85jp42RArLxXG3fPXF5Rnp14sCodV9igVww%3D"
+            src="./fotos/335401.png"
             alert="link do meu Medium"
             width="20px"
           />

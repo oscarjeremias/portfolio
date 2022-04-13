@@ -3,10 +3,9 @@
 const menuActive = document.getElementById("menuActive");
 const menu = document.getElementById("menu");
 const menuToggle = menu.querySelectorAll("div");
-/*const header = document.querySelector("header");
-const section = document.querySelector("section");
-const footer = document.querySelector("footer");
-*/
+const options = menuActive.querySelectorAll("li");
+const sectionP = document.querySelector("section");
+const sections = document.querySelectorAll(".sectionArtec");
 
 function activeMenu() {
   menuToggle[0].classList.toggle("translate-y-2");
@@ -22,14 +21,25 @@ function activeMenu() {
   menuToggle[2].classList.toggle("rotate-[-45deg]");
 
   menuActive.classList.toggle("hidden");
+
+  sectionP.classList.toggle("hidden");
+  sectionP.classList.toggle("sm:block");
 }
 
 menu.addEventListener("click", activeMenu);
 
-const seguinte = document.getElementById("seguinte");
+options[0].addEventListener("click", activeMenu);
+options[1].addEventListener("click", activeMenu);
+options[2].addEventListener("click", activeMenu);
+options[3].addEventListener("click", activeMenu);
 
-function mudarConteudoPrincipal() {
-  alert("oi");
+function efeitoScroll() {
+  sections.forEach((item) => {
+    const isVisibel = item.getBoundingClientRect().top < window.innerHeight;
+    if (isVisibel === true) {
+      item.classList.add("aparecer");
+    }
+  });
 }
 
-seguinte.addEventListener("click", mudarConteudoPrincipal);
+window.addEventListener("scroll", efeitoScroll);
