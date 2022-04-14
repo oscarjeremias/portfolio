@@ -10,6 +10,11 @@ html {
     background: #69c9d0;
   }
 }
+.option:hover {
+  transition: 0.5s;
+  animation-name: click;
+  animation-duration: 0.5s;
+}
 
 #sectionSobre {
   transform: translateX(0);
