@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     colors: {
       black: "#171717",
@@ -21,7 +21,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       gridTemplateRows: {
-        3: "minmax(7.5vh,7.5%) minmax(77.5vh,77.5%) minmax(15vh,15%)",
+        3: "100px minmax(77.5vh,77.5%) 150px",
       },
       gridTemplateColumns: {
         1: "100vw",
